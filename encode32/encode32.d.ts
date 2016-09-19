@@ -27,4 +27,6 @@ declare namespace encode32 {
     export function fixedDecoder(bitsPerNumber: number): (base32: string) => number;    
 }
 
-export = encode32;
+declare module 'encode32' {
+    export = encode32;
+}
